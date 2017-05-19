@@ -25,10 +25,12 @@ def rotate(x, y, theta=45):
     return m.dot(data) + mu
 
 
-# 皮尔逊相关系数定义为两个变量之间的协方差和标准差的商
-# 标准差 = 方差的平方根
-# 方差 = 平方的平均 - 平均的平方
 def calc_pearson(x, y):
+    """"
+    皮尔逊相关系数定义为两个变量之间的协方差和标准差的商
+    标准差 = 方差的平方根
+    方差 = 平方的平均 - 平均的平方
+    """
     xstd = np.sqrt(np.mean(x ** 2) - np.mean(x) ** 2)
     ystd = np.sqrt(np.mean(y ** 2) - np.mean(y) ** 2)
     cov = np.cov(x, y, bias=True)[0,1]
