@@ -7,9 +7,6 @@ def calc_convariance(x, y):
     if len(x) != len(y):
         return
 
-    x_n = x.shape[0]
-    y_n = y.shape[0]
-
     x_mean = np.mean(x)
     y_mean = np.mean(y)
 
