@@ -133,6 +133,9 @@ if __name__ == "__main__":
     print a[i]
     print a[i, 3]
 
+    # 获取第一列数据
+    print a[:, 0]
+
     ## numpy与python math库的对比
     for i in np.logspace(0, 7, 10):
         i = int(i)
